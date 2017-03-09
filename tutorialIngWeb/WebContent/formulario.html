@@ -1,0 +1,72 @@
+<!Doctype html encoding="UTF8">
+<html>
+	<head>
+		<title>Pagina con una imagen</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+		<!--<style>stilo.ccs </style>
+		<scrypt> archivoJavaScript.js</scrypt> -->
+		<style type="text/css">
+		<!--
+		textarea,input,select {
+			background-color: #FDFBFB;
+			border: 1px #BBBBBB solid;
+			padding: 2px;
+			margin: 1px;
+			font-size: 14px;
+			color: #808080;
+		}
+
+		body{  background-color: #669999; color: #002222	; font-size: 12px; font-family: verdana; }
+
+		a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 12px; }
+		a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+		img {border: none;}
+		td { font-size: 12px; color: #7A7A7A; }
+
+		-->
+		</style>
+		<script type="text/javascript">
+			function enviar(){
+				alert(loginForm.nombre.value);
+				var texto = document.getElementById("input1");
+				alert(texto.value);
+			}
+		</script>
+	</head>
+
+	<body>
+			<br/>
+			<br/>
+			<br/>
+			<center><div class="w3-div" style="background-color:#c2d6d6; width:50%;">	
+			<h1>Formulario</h1>
+			<form style="background-color:#c2d6d6" action="GuardarFormulario" method="POST" name="loginForm">
+			<input id="cedula" name="cedula" type="text" size="50" maxlength="30" placeholder="cedula" required>
+			<br/>
+			<br/>
+			<input id="nombre" name="nombre" type="text" size="50" maxlength="30" placeholder="nombre" required>
+			<br/>
+			<br/>
+			<input id="apellido" name="apellido" type="text" size="50" maxlength="30" placeholder="apellido" required>
+			<br/>
+			<br/>
+			<input id="email" name="correo" type="email" size="50" maxlength="30" placeholder="email" required>
+			<br/>
+			<br/>
+			<!--  <select name="ciudad">
+				<option value="city1">Ciudad1</option>
+				<option value="city2">Ciudad2</option>
+			</select>
+			<br/>
+			<br/>
+			<textarea name="textarea" cols="20" rows="4">jasdijbsadsahdsbas</textarea>
+			<br/>
+			<br/> -->
+			<input id="botonGuardar" type="submit" class="w3-btn" value="Guardar" >
+			<input id="botonCancelar" type="button" class="w3-btn" value="Cancelar" onclick="enviar()">
+			
+			<br/>
+			</form></center>
+			</div>
+	</body>
+</html>

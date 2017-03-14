@@ -6,25 +6,26 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Datos {
-	public void consultarCiudades(){
-		Connection con=null;
-		PreparedStatement ps = null;
-		ResultSet rs = null;
+	public static void consultarCiudades(){
+		//metodo para realizar la busqueda en la base de datos
+		Connection con=null; // variable para manejar la conexion
+		PreparedStatement ps = null; //parametro de envio para el query
+		ResultSet rs = null; //respuesta de la busqueda
 		try{
 			Class.forName("com.mysql.jdbc.Driver"); //Busca el driver especial para la base de datos, en este caso, mysql
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ciudades","root","root");//Conecta el driver con el localhost/ip y la base de datos correspondiente
 			ps = con.prepareStatement("Select * From ciudades");//Se prepara la sentencia sql pero no se envia
 			rs = ps.executeQuery();//Se envia y ejecuta la sentencia sql anteriormente preparada
 			while(rs.next()){
-				System.out.print(rs.getString("codigo")+":"+rs.getString("Nombre"));
+				System.out.println(rs.getString("codigo")+":"+rs.getString("Nombre"));
 			}
-		}catch(ClassNotFoundException e){
+		}catch(ClassNotFoundException e){ //manejo de excepciones
 			e.printStackTrace();
 		}catch(SQLException e){
 			e.printStackTrace();
 		}finally{
 			try{
-				rs.close();
+				rs.close();//se cierran las variables de conexion
 				ps.close();
 				con.close();
 			}catch(SQLException e){
@@ -33,6 +34,6 @@ public class Datos {
 		}
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 	}
 }

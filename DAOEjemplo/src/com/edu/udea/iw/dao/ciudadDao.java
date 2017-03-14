@@ -20,9 +20,9 @@ public class ciudadDao implements InterfaceCiudadDao {
 		try {
 			//llama la conexion por medio del dto
 			con = DataSource.getConnection(); 
-			ps = con.prepareStatement("Select * From Ciudades");
+			ps = con.prepareStatement("Select * From ciudades");
 			rs = ps.executeQuery();
-			while(rs.next()) {
+			while(rs.next()) { // para cada ciudad agrega respuesta a la lista
 				Ciudad ciudad = new Ciudad();
 				ciudad.setCodigo(rs.getLong("codigo"));
 				ciudad.setNombre(rs.getString("nombre"));
@@ -35,7 +35,7 @@ public class ciudadDao implements InterfaceCiudadDao {
 		}catch (SQLException e) {
 			throw new ExceptionController("No se puede establecer la conexion",e);
 		}finally {
-			try {
+			try { //cerrar canales de conexion
 				if(rs != null) rs.close();
 				if(ps != null) ps.close();
 				if(con != null) con.close();
@@ -45,4 +45,35 @@ public class ciudadDao implements InterfaceCiudadDao {
 		}
 		return lista;
 	}
-}
+	public Ciudad obtener(Long codigo) throws ExceptionController{
+		Ciudad ciudad = null;
+		Connection con = null;
+		PreparedStatement ps= null;
+		ResultSet rs=null;
+		try {
+			con = DataSource.getConnection();
+			ps = con.prepareStatement("SELECT * FROM ciudades WHERE codigo=?");
+			ps.setLong(1, codigo); //se usa para evitar SQL Injection
+			rs= ps.executeQuery();
+			if(rs.next()) {
+				ciudad = new Ciudad();
+				ciudad.setCodigo(rs.getLong("codigo"));
+				ciudad.setNombre(rs.getString("nombre"));
+				ciudad.setCodigoArea(rs.getString("codigoArea"));
+			}
+		}catch(SQLException e){
+			System.out.println("No se pudo realizar la conexion");
+		}finally{
+			try{
+				rs.close();
+				ps.close();
+				con.close();
+			}catch(SQLException e){
+				e.printStackTrace();
+			}
+		}
+		return ciudad;
+		}
+			
+	}
+

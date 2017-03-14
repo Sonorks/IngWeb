@@ -1,7 +1,7 @@
 package com.edu.udea.iw.exception;
 
 public class ExceptionController extends Exception {
-
+	//clase personalizada para el manejo de las excepciones 
 	public ExceptionController() {
 		super();
 		// TODO Auto-generated constructor stub

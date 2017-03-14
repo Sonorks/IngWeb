@@ -8,5 +8,7 @@ import com.edu.udea.iw.exception.ExceptionController;
 public interface InterfaceCiudadDao {
 	//Entrega la lista completa de las ciudades en la BD
 	public List<Ciudad> obtener() throws ExceptionController;
+	//Entrega una ciudad con un código específico
+	public Ciudad obtener(Long codigo) throws ExceptionController;
 	
 }

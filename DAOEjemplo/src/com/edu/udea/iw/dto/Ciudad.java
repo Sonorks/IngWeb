@@ -5,7 +5,7 @@ public class Ciudad {
 	private String nombre; 
 	private String codigoArea;
 	
-	
+	//Clase POJO para el manejo de objetos
 	//Getters y Setters para atributos de Ciudad
 	
 	public long getCodigo() {

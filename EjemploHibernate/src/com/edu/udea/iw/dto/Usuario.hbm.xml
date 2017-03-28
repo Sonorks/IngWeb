@@ -17,8 +17,8 @@
         <property name="Contrasena" type="java.lang.String">
             <column name="CONTRASENA" length="125"/>
         </property>
-        <many-to-one class="com.edu.udea.iw.dto.Rol" name="Rol"> <!-- para claves foraneas -->
-        	<column name="ROL" length="12" />
+        <many-to-one class="com.edu.udea.iw.dto.Rol" name="Rol" lazy="false" fetch="join"> <!-- para claves foraneas -->
+        	<column name="ROL" length="12" /> <!-- Lazy = false es para mantener la session activa -->
         </many-to-one>
     </class>
 </hibernate-mapping>

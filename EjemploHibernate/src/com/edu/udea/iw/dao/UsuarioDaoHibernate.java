@@ -31,10 +31,14 @@ public class UsuarioDaoHibernate implements InterfaceUsuarioDao{
 			session = DataSource.getInstance().getSession();//se obtiene la sesion
 			//busqueda por clave primaria
 			usuario = (Usuario)session.get(Usuario.class,login); //si no existe el codigo retorna null
-			System.out.println(usuario.getRol());
+			System.out.println(usuario.getNombres()+" " +usuario.getRol().getNombre());
 			
 		}catch(HibernateException e){
 			throw new ExceptionController("Error consultando ciudades",e);
+		}finally {
+			if(session!=null) {
+				session.close();
+			}
 		}
 		return usuario;
 	}

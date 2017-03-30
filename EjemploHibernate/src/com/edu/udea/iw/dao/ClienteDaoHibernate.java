@@ -13,7 +13,7 @@ import org.hibernate.criterion.Order;
 import com.edu.udea.iw.dto.Cliente;
 import com.edu.udea.iw.dto.Usuario;
 import com.edu.udea.iw.exception.ExceptionController;
-
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 public class ClienteDaoHibernate implements InterfaceClientesDAO {
 	public List<Cliente> obtener() throws ExceptionController{
 		List<Cliente> lista = new ArrayList<Cliente>();

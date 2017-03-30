@@ -1,7 +1,7 @@
 package com.edu.udea.iw.dto;
 
 import java.util.Date;
-
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 public class Cliente {
 	private String cedula;
 	private String nombres;

@@ -15,9 +15,9 @@ import org.hibernate.criterion.Restrictions;
 
 import com.edu.udea.iw.dto.Ciudad;
 import com.edu.udea.iw.exception.ExceptionController;
-
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 //Clase para implementar la interface de CiudadDao para obtener la lista de datos de la BD
-public class ciudadDaoHibernate implements InterfaceCiudadDao {
+public class CiudadDaoHibernate implements InterfaceCiudadDao {
 	public List<Ciudad> obtener() throws ExceptionController{
 			List<Ciudad> lista = new ArrayList<Ciudad>();
 			Session session = null;

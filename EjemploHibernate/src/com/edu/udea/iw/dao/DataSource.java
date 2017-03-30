@@ -4,7 +4,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.classic.Session;
 import com.edu.udea.iw.exception.ExceptionController;
-
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 public class DataSource {
 	private static DataSource instancia; //para patron singleton
 	private SessionFactory factory = null; //manejo de sesiones con hibernate

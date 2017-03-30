@@ -12,7 +12,7 @@ import com.edu.udea.iw.exception.ExceptionController;
 public class ClienteDaoTest {
 
 	@Test
-	public void testObtener() {
+	public void testAgregarCliente() { // modificado para agregar cliente
 		InterfaceClientesDAO clienteDao = null;
 		List<Cliente> lista = null; //lista donde se guardará el resultado del query
 		

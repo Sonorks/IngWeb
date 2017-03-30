@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import com.edu.udea.iw.exception.ExceptionController;
-
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 public class DataSource { //Clase para obtener la conexión a la base de datos
 	private static Connection con;
 	private DataSource() {

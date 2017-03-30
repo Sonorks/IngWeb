@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 public class Datos {
 	public static void consultarCiudades(){
 		//metodo para realizar la busqueda en la base de datos

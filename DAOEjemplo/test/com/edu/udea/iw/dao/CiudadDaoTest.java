@@ -8,8 +8,8 @@ import org.junit.Test;
 
 import com.edu.udea.iw.dto.Ciudad;
 import com.edu.udea.iw.exception.ExceptionController;
-
-public class ciudadDaoTest {
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
+public class CiudadDaoTest {
 	
 	@Test
 	public void testObtener() {
@@ -18,7 +18,7 @@ public class ciudadDaoTest {
 		List<Ciudad> lista = null; //lista donde se guardará el resultado del query
 		
 		try {
-			ciudadDao = new ciudadDao(); //se construye el objeto con la implementacion de la interfaz
+			ciudadDao = new CiudadDao(); //se construye el objeto con la implementacion de la interfaz
 			lista = ciudadDao.obtener(); //llamado del metodo
 			assertTrue(lista.size()>0);  //si se obtienen datos
 		}catch(ExceptionController e) {

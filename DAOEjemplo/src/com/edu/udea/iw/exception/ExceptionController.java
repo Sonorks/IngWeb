@@ -1,5 +1,5 @@
 package com.edu.udea.iw.exception;
-
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 public class ExceptionController extends Exception {
 	//clase personalizada para el manejo de las excepciones 
 	public ExceptionController() {

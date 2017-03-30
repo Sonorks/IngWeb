@@ -8,8 +8,8 @@ import org.junit.Test;
 
 import com.edu.udea.iw.dto.Ciudad;
 import com.edu.udea.iw.exception.ExceptionController;
-
-public class ciudadDaoTest2 {
+//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
+public class CiudadDaoTest2 {
 
 	@Test
 	public void testObtenerLong() {
@@ -18,7 +18,7 @@ public class ciudadDaoTest2 {
 		Long id = (long) 1; //variable donde se almacena el codigo de la ciudad
 		Ciudad ciudad = null; //objeto donde se guardara la respuesta del query
 		try {
-			ciudadDao = new ciudadDao(); //se construye el objeto con la implementacion
+			ciudadDao = new CiudadDao(); //se construye el objeto con la implementacion
 			ciudad = ciudadDao.obtener(id);
 			assertTrue(ciudad!=null); //si se encuentra el dato
 		}catch(ExceptionController e) {

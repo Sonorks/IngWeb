@@ -1,6 +1,7 @@
 package com.edu.udea.iw.dto;
 
 import java.util.Date;
+import java.util.Set;
 //@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 public class Cliente {
 	private String cedula;
@@ -14,7 +15,13 @@ public class Cliente {
 	private boolean eliminado;
 	private Usuario usuarioElimina;
 	private Date fechaEliminacion;
-	
+	Set<Direccion> direcciones;
+	public Set<Direccion> getDirecciones() {
+		return direcciones;
+	}
+	public void setDirecciones(Set<Direccion> direcciones) {
+		this.direcciones = direcciones;
+	}
 	public String getCedula() {
 		return cedula;
 	}

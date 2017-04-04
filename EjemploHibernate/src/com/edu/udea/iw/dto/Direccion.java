@@ -6,11 +6,12 @@ public class Direccion {
 	private String telefono;
 	private int ciudad;
 	private boolean preferido;
-	public DireccionID getDireccionID() {
+	
+	public DireccionID getId() {
 		return id;
 	}
-	public void setDireccionID(DireccionID id) {
-		this.id=id;
+	public void setId(DireccionID id) {
+		this.id = id;
 	}
 	public String getDireccion() {
 		return direccion;

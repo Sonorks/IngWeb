@@ -6,9 +6,9 @@
     <class name="com.edu.udea.iw.dto.Direccion" table="direcciones">
         <composite-id name="id" class="com.edu.udea.iw.dto.DireccionID">
             <key-property name="codigo" type="java.lang.Long"> <!-- para tomar como clave primaria de direccion la variable en DireccionID -->
-            	<column name="codigo"/>
+            	<column name="codigo" />
             </key-property>
-            <key-many-to-one name="cliente" class="com.edu.udea.iw.dto.DireccionID"> <!-- la clave foranea -->
+            <key-many-to-one name="cliente" class="com.edu.udea.iw.dto.Cliente"> <!-- la clave foranea -->
             	<column name="cliente"/>
             </key-many-to-one>
             <generator class="assigned" />
@@ -26,9 +26,6 @@
             <column name="PREFERIDO" />
         </property>
         <!-- para buscar direcciones ligadas a un cliente -->
-        <set name="direcciones">
-        	<key column="cliente"></key>
-        	<one-to-many class="com.edu.udea.iw.dto.Direccion"/>
-        </set>
+        
     </class>
 </hibernate-mapping>

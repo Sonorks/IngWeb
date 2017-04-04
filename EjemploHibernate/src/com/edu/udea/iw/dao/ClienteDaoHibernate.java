@@ -48,7 +48,7 @@ public class ClienteDaoHibernate implements InterfaceClientesDAO {
 			}
 		}
 		Cliente cl = new Cliente();
-		cl.setCedula("1035436986");
+		cl.setCedula("1035436913");
 		cl.setApellidos("Vasquez Giraldo");
 		cl.setNombres("Julian");
 		cl.setEmail("julian.vasquezg@udea.edu.co");

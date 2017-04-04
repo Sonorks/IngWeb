@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 23, 2017 12:31:46 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.edu.udea.iw.dto.Usuario" table="usuarios">
+        <id name="Login" type="java.lang.String">
+            <column name="LOGIN" />
+            <generator class="assigned" />
+        </id>
+        <property name="Apellidos" type="java.lang.String">
+            <column name="Apellidos" length="45"/>
+        </property>
+        <property name="Nombres" type="java.lang.String">
+            <column name="NOMBRES" length="45"/>
+        </property>
+        <property name="Contrasena" type="java.lang.String">
+            <column name="CONTRASENA" length="125"/>
+        </property>
+        <many-to-one class="com.edu.udea.iw.dto.Rol" name="Rol" lazy="false" fetch="join"> <!-- para claves foraneas -->
+        	<column name="ROL" length="12" /> <!-- Lazy = false es para mantener la session activa -->
+        </many-to-one>
+    </class>
+</hibernate-mapping>

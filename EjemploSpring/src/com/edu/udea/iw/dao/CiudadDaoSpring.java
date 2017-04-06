@@ -10,6 +10,7 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
@@ -17,12 +18,19 @@ import com.edu.udea.iw.dto.Ciudad;
 import com.edu.udea.iw.exception.ExceptionController;
 //@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
 //Clase para implementar la interface de CiudadDao para obtener la lista de datos de la BD
-public class CiudadDaoHibernate implements InterfaceCiudadDao {
+public class CiudadDaoSpring implements InterfaceCiudadDao {
+	private SessionFactory sessionFactory;
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
 	public List<Ciudad> obtener() throws ExceptionController{
 			List<Ciudad> lista = new ArrayList<Ciudad>();
 			Session session = null;
 			try {
-				session = DataSource.getInstance().getSession();
+				session = sessionFactory.getCurrentSession(); //para conectarse con el BEAN definido en SpringConf.xml
 				Criteria criteria = session.createCriteria(Ciudad.class); //retorna la busqueda en la tabla seleccionada
 				lista = criteria.list();
 			}catch(HibernateException e){
@@ -35,7 +43,7 @@ public class CiudadDaoHibernate implements InterfaceCiudadDao {
 			Ciudad ciudad = null;
 			Session session = null;
 			try {
-				session = DataSource.getInstance().getSession();//se obtiene la sesion
+				session = sessionFactory.getCurrentSession();//se obtiene la sesion
 				//busqueda por clave primaria
 				ciudad = (Ciudad)session.get(Ciudad.class,codigo); //si no existe el codigo retorna null
 				//existe el metodo session.load(Ciudad.class,codigo) que retorna excepcions si no existe.
@@ -59,15 +67,10 @@ public class CiudadDaoHibernate implements InterfaceCiudadDao {
 	}
 	public void guardarCiudad(Ciudad ciudad) throws ExceptionController {
 		Session session = null;
-		Transaction tx = null; // para abrir transaccion con la base de datos
 		
 		try {
-			session = DataSource.getInstance().getSession();//se obtiene la sesion
-			tx = session.beginTransaction();// inicializa la transaccion de la sesion
-			//existen los metodos session.delete(), session.update() y session.saveOrUpdate()
-			//saveOrUpdate es por si no se sabe si la clave primaria ya existe
+			session = sessionFactory.getCurrentSession();//se obtiene la sesion
 			session.save(ciudad); //agregar ciudad a la sesion abierta
-			tx.commit(); // para hacer persistente la transaccion
 		}catch(HibernateException e){
 			throw new ExceptionController("Error agregando ciudades",e);
 		}

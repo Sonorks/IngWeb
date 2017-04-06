@@ -24,5 +24,8 @@
 	<classpathentry kind="lib" path="/home/sonorks/Desktop/LibreriasHibernate/slf4j-api-1.6.1.jar"/>
 	<classpathentry kind="lib" path="/home/sonorks/Desktop/LibreriasHibernate/slf4j-log4j12-1.7.2.jar"/>
 	<classpathentry kind="lib" path="/home/sonorks/Desktop/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/home/sonorks/Downloads/mysql-connector-java-5.1.22-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

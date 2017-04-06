@@ -40,4 +40,7 @@
 		<property name="sessionFactory" ref="sessionFactory"></property>
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
+	<bean id="CiudadDaoSpring" class="com.edu.udea.iw.dao.CiudadDaoSpring">
+		<property name="sessionFactory" ref="sessionFactory"></property> <!-- nombre de la propiedad / atributo en CiudadDaoSpring -->
+	</bean>
 </beans>

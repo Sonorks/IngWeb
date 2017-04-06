@@ -6,17 +6,25 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 import com.edu.udea.iw.dto.Ciudad;
 import com.edu.udea.iw.dto.Usuario;
 import com.edu.udea.iw.exception.ExceptionController;
 //@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
-public class UsuarioDaoHibernate implements InterfaceUsuarioDao{
+public class UsuarioDaoSpring implements InterfaceUsuarioDao{
+	private SessionFactory sessionFactory;
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
 	public List<Usuario> obtener() throws ExceptionController{
 		List<Usuario> lista = new ArrayList<Usuario>();
 		Session session = null;
 		try {
-			session = DataSource.getInstance().getSession();
+			session = sessionFactory.getCurrentSession();
 			Criteria criteria = session.createCriteria(Usuario.class); //retorna la busqueda en la tabla seleccionada
 			lista = criteria.list();
 		}catch(HibernateException e){
@@ -28,7 +36,7 @@ public class UsuarioDaoHibernate implements InterfaceUsuarioDao{
 		Usuario usuario = null;
 		Session session = null;
 		try {
-			session = DataSource.getInstance().getSession();//se obtiene la sesion
+			session = sessionFactory.getCurrentSession();//se obtiene la sesion
 			//busqueda por clave primaria
 			usuario = (Usuario)session.get(Usuario.class,login); //si no existe el codigo retorna null
 			System.out.println(usuario.getNombres()+" " +usuario.getRol().getNombre());

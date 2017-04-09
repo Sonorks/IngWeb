@@ -15,7 +15,7 @@ import com.edu.udea.iw.dto.Cliente;
 import com.edu.udea.iw.dto.Usuario;
 import com.edu.udea.iw.exception.ExceptionController;
 //@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
-public class ClienteDaoSpring implements InterfaceClientesDAO {
+public class ClienteDaoSpring implements InterfaceClientesDao {
 	private SessionFactory sessionFactory;
 	public SessionFactory getSessionFactory() {
 		return sessionFactory;
@@ -34,15 +34,12 @@ public class ClienteDaoSpring implements InterfaceClientesDAO {
 		}catch(HibernateException e){
 			throw new ExceptionController("Error consultando clientes",e);
 		}finally {
-			if(session!=null) {
-				session.close();
-			}
+		
 		}
 		return lista;
 	}
 	public void agregarCliente() throws ExceptionController{
 		Session session = null;
-		Transaction tx = null; // para abrir transaccion con la base de datos
 		Usuario user;
 		try {
 			session = sessionFactory.getCurrentSession();
@@ -51,9 +48,7 @@ public class ClienteDaoSpring implements InterfaceClientesDAO {
 		}catch(HibernateException e){
 			throw new ExceptionController("Error consultando clientes",e);
 		}finally {
-			if(session!=null) {
-				session.close();
-			}
+		
 		}
 		Cliente cl = new Cliente();
 		cl.setCedula("1035436913");
@@ -66,11 +61,7 @@ public class ClienteDaoSpring implements InterfaceClientesDAO {
 		cl.setFechaCreacion(new Date());
 		try {
 			session = sessionFactory.getCurrentSession();//se obtiene la sesion
-			tx = session.beginTransaction();// inicializa la transaccion de la sesion
-			//existen los metodos session.delete(), session.update() y session.saveOrUpdate()
-			//saveOrUpdate es por si no se sabe si la clave primaria ya existe
-			session.saveOrUpdate(cl); //agregar ciudad a la sesion abierta
-			tx.commit(); // para hacer persistente la transaccion
+			session.saveOrUpdate(cl); //agregar cliente a la sesion abierta
 		}catch(HibernateException e){
 			throw new ExceptionController("Error agregando clientes",e);
 		}

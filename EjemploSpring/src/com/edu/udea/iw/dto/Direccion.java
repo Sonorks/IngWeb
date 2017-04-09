@@ -5,7 +5,7 @@ public class Direccion {
 	private String direccion;
 	private String telefono;
 	private int ciudad;
-	private boolean preferido;
+	private boolean preferida;
 	
 	public DireccionID getId() {
 		return id;
@@ -31,11 +31,11 @@ public class Direccion {
 	public void setCiudad(int ciudad) {
 		this.ciudad = ciudad;
 	}
-	public boolean isPreferido() {
-		return preferido;
+	public boolean isPreferida() {
+		return preferida;
 	}
-	public void setPreferido(boolean preferido) {
-		this.preferido = preferido;
+	public void setPreferida(boolean preferido) {
+		this.preferida = preferido;
 	}
 
 }

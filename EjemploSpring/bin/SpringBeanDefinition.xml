@@ -43,4 +43,16 @@
 	<bean id="CiudadDaoSpring" class="com.edu.udea.iw.dao.CiudadDaoSpring">
 		<property name="sessionFactory" ref="sessionFactory"></property> <!-- nombre de la propiedad / atributo en CiudadDaoSpring -->
 	</bean>
+	<bean id="ClienteDaoSpring" class="com.edu.udea.iw.dao.ClienteDaoSpring">
+		<property name="sessionFactory" ref="sessionFactory"></property> <!-- nombre de la propiedad / atributo en ClienteDaoSpring -->
+	</bean>
+	<bean id="UsuarioDaoSpring" class="com.edu.udea.iw.dao.UsuarioDaoSpring">
+		<property name="sessionFactory" ref="sessionFactory"></property> <!-- nombre de la propiedad / atributo en CiudadDaoSpring -->
+	</bean>
+	<bean id="RolDaoSpring" class="com.edu.udea.iw.dao.RolDaoSpring">
+		<property name="sessionFactory" ref="sessionFactory"></property> <!-- nombre de la propiedad / atributo en CiudadDaoSpring -->
+	</bean>
+	<bean id="DireccionDaoSpring" class="com.edu.udea.iw.dao.DireccionDaoSpring">
+		<property name="sessionFactory" ref="sessionFactory"></property> <!-- nombre de la propiedad / atributo en CiudadDaoSpring -->
+	</bean>
 </beans>

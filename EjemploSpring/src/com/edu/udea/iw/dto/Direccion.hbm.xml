@@ -22,8 +22,8 @@
         <property name="ciudad" type="int">
             <column name="CIUDAD" />
         </property>
-        <property name="preferido" type="boolean">
-            <column name="PREFERIDO" />
+        <property name="preferida" type="boolean">
+            <column name="PREFERIDA" />
         </property>
         <!-- para buscar direcciones ligadas a un cliente -->
         

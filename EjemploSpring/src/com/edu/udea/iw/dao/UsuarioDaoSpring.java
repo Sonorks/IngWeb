@@ -44,9 +44,7 @@ public class UsuarioDaoSpring implements InterfaceUsuarioDao{
 		}catch(HibernateException e){
 			throw new ExceptionController("Error consultando ciudades",e);
 		}finally {
-			if(session!=null) {
-				session.close();
-			}
+			
 		}
 		return usuario;
 	}

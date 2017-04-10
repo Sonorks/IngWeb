@@ -1,5 +1,8 @@
 package com.edu.udea.iw.dto;
-//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
+/**
+ * @Author Julian Vasquez - julivas96@gmail.com 
+ * @Version = 1.0 
+ * */
 public class Ciudad {
 	private long codigo; 
 	private String nombre; 

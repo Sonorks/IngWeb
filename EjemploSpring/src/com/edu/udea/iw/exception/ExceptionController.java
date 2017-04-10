@@ -1,7 +1,10 @@
 package com.edu.udea.iw.exception;
 
 import org.apache.log4j.Logger;
-//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
+ /**
+ * @Author Julian Vasquez - julivas96@gmail.com 
+ * @Version = 1.0 
+ * */ 
 public class ExceptionController extends Exception {
 	private Logger logger = Logger.getLogger(this.getClass()); // para escribir el log en un archivo
 	//clase personalizada para el manejo de las excepciones 

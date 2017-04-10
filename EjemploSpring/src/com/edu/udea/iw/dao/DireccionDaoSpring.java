@@ -10,7 +10,10 @@ import org.hibernate.SessionFactory;
 
 import com.edu.udea.iw.dto.Direccion;
 import com.edu.udea.iw.exception.ExceptionController;
-
+/**
+ * @Author Julian Vasquez - julivas96@gmail.com 
+ * @Version = 1.0 
+ * */
 public class DireccionDaoSpring implements InterfaceDireccionDao{
 	
 	private SessionFactory sessionFactory;

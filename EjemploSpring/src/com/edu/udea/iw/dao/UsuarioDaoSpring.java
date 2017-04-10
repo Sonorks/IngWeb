@@ -11,7 +11,10 @@ import org.hibernate.SessionFactory;
 import com.edu.udea.iw.dto.Ciudad;
 import com.edu.udea.iw.dto.Usuario;
 import com.edu.udea.iw.exception.ExceptionController;
-//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
+/**
+ * @Author Julian Vasquez - julivas96@gmail.com 
+ * @Version = 1.0 
+ * */
 public class UsuarioDaoSpring implements InterfaceUsuarioDao{
 	private SessionFactory sessionFactory;
 	public SessionFactory getSessionFactory() {

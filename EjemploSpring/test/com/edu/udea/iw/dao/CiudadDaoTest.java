@@ -14,7 +14,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.edu.udea.iw.dto.Ciudad;
 import com.edu.udea.iw.exception.ExceptionController;
-//@Author Julian Vasquez - julivas96@gmail.com @Version = 1.0
+/**
+ * @Author Julian Vasquez - julivas96@gmail.com 
+ * @Version = 1.0 
+ * */  
 @RunWith(SpringJUnit4ClassRunner.class) //para correr un test con tipo de prueba Spring
 @Transactional //indica que se hacen transacciones con la BD
 @ContextConfiguration(locations="classpath:SpringBeanDefinition.xml") //indica donde está el archivo de configuracion de spring

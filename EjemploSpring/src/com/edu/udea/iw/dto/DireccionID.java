@@ -1,7 +1,10 @@
 package com.edu.udea.iw.dto;
 
 import java.io.Serializable;
-
+/**
+ * @Author Julian Vasquez - julivas96@gmail.com 
+ * @Version = 1.0 
+ * */
 public class DireccionID implements Serializable{
 	private Long codigo;
 	private Cliente cliente;

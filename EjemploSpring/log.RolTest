@@ -1,14 +1,14 @@
-SpringJUnit4ClassRunner constructor called with [class com.edu.udea.iw.dao.UsuarioDaoTest].
+SpringJUnit4ClassRunner constructor called with [class com.edu.udea.iw.bl.UsuarioBLTest].
 Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
-Retrieved @ContextConfiguration attributes [{locations=[classpath:SpringBeanDefinition.xml], inheritLocations=true, initializers=[], inheritInitializers=true, name=, value=[], classes=[], loader=interface org.springframework.test.context.ContextLoader}] for declaring class [com.edu.udea.iw.dao.UsuarioDaoTest].
-Resolved context configuration attributes: [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.dao.UsuarioDaoTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
-Resolving ContextLoader for context configuration attributes [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.dao.UsuarioDaoTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
-Using ContextLoader class [org.springframework.test.context.support.DelegatingSmartContextLoader] for test class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Processing locations and classes for context configuration attributes [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.dao.UsuarioDaoTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
-Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.dao.UsuarioDaoTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
-Processing context initializers for context configuration attributes [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.dao.UsuarioDaoTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
-Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.edu.udea.iw.dao.UsuarioDaoTest]
-@TestExecutionListeners is not present for class [com.edu.udea.iw.dao.UsuarioDaoTest]: using defaults.
+Retrieved @ContextConfiguration attributes [{locations=[classpath:SpringBeanDefinition.xml], inheritLocations=true, initializers=[], inheritInitializers=true, name=, value=[], classes=[], loader=interface org.springframework.test.context.ContextLoader}] for declaring class [com.edu.udea.iw.bl.UsuarioBLTest].
+Resolved context configuration attributes: [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.bl.UsuarioBLTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+Resolving ContextLoader for context configuration attributes [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.bl.UsuarioBLTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+Using ContextLoader class [org.springframework.test.context.support.DelegatingSmartContextLoader] for test class [com.edu.udea.iw.bl.UsuarioBLTest]
+Processing locations and classes for context configuration attributes [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.bl.UsuarioBLTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.bl.UsuarioBLTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+Processing context initializers for context configuration attributes [ContextConfigurationAttributes@13b6d03 declaringClass = 'com.edu.udea.iw.bl.UsuarioBLTest', classes = '{}', locations = '{classpath:SpringBeanDefinition.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.edu.udea.iw.bl.UsuarioBLTest]
+@TestExecutionListeners is not present for class [com.edu.udea.iw.bl.UsuarioBLTest]: using defaults.
 Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
 Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3fb6a447, org.springframework.test.context.support.DirtiesContextTestExecutionListener@79b4d0f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b2fad11, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@79698539]
@@ -16,21 +16,21 @@ Registering TestExecutionListener: org.springframework.test.context.support.Depe
 Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextTestExecutionListener@79b4d0f
 Registering TestExecutionListener: org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b2fad11
 Registering TestExecutionListener: org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@79698539
-Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.dao.UsuarioDaoTest]
-beforeTestClass(): class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.dao.UsuarioDaoTest]
-prepareTestInstance(): instance [com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55]
-Performing dependency injection for test context [[DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
-Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
-Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.bl.UsuarioBLTest]
+beforeTestClass(): class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved @ProfileValueSourceConfiguration [null] for test class [com.edu.udea.iw.bl.UsuarioBLTest]
+Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.edu.udea.iw.bl.UsuarioBLTest]
+prepareTestInstance(): instance [com.edu.udea.iw.bl.UsuarioBLTest@6df97b55]
+Performing dependency injection for test context [[DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = com.edu.udea.iw.bl.UsuarioBLTest@6df97b55, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
 Adding [systemProperties] PropertySource with lowest search precedence
 Adding [systemEnvironment] PropertySource with lowest search precedence
 Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
@@ -41,9 +41,9 @@ Loading schema mappings from [META-INF/spring.schemas]
 Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd}
 Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
 Loading bean definitions
-Loaded 8 bean definitions from location pattern [classpath:SpringBeanDefinition.xml]
-Refreshing org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Sat Apr 08 20:42:54 COT 2017]; root of context hierarchy
-Bean factory for org.springframework.context.support.GenericApplicationContext@402f32ff: org.springframework.beans.factory.support.DefaultListableBeanFactory@3ecd23d9: defining beans [dataSource,sessionFactory,txManager,CiudadDaoSpring,ClienteDaoSpring,UsuarioDaoSpring,RolDaoSpring,DireccionDaoSpring,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor]; root of factory hierarchy
+Loaded 10 bean definitions from location pattern [classpath:SpringBeanDefinition.xml]
+Refreshing org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Tue Apr 18 18:58:57 COT 2017]; root of context hierarchy
+Bean factory for org.springframework.context.support.GenericApplicationContext@402f32ff: org.springframework.beans.factory.support.DefaultListableBeanFactory@3ecd23d9: defining beans [dataSource,sessionFactory,txManager,CiudadDaoSpring,ClienteDaoSpring,UsuarioDaoSpring,RolDaoSpring,DireccionDaoSpring,ClienteBL,UsuarioBL,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor]; root of factory hierarchy
 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
@@ -72,9 +72,9 @@ Creating shared instance of singleton bean 'org.springframework.context.annotati
 Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
 Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
 Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@4461c7e3]
-Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@1b68b9a4]
-Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ecd23d9: defining beans [dataSource,sessionFactory,txManager,CiudadDaoSpring,ClienteDaoSpring,UsuarioDaoSpring,RolDaoSpring,DireccionDaoSpring,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@77e4c80f]
+Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3b2c72c2]
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ecd23d9: defining beans [dataSource,sessionFactory,txManager,CiudadDaoSpring,ClienteDaoSpring,UsuarioDaoSpring,RolDaoSpring,DireccionDaoSpring,ClienteBL,UsuarioBL,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
 Creating shared instance of singleton bean 'dataSource'
 Creating instance of bean 'dataSource'
 Eagerly caching bean 'dataSource' to allow for resolving potential circular references
@@ -130,99 +130,99 @@ Found bean property 'typeDefinitions' of type [[Lorg.springframework.orm.hiberna
 Found bean property 'useTransactionAwareDataSource' of type [boolean]
 Returning cached instance of singleton bean 'dataSource'
 Invoking afterPropertiesSet() on bean with name 'sessionFactory'
-Adding type registration boolean -> org.hibernate.type.BooleanType@3e92efc3
-Adding type registration boolean -> org.hibernate.type.BooleanType@3e92efc3
-Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3e92efc3
-Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@29626d54
-Adding type registration true_false -> org.hibernate.type.TrueFalseType@10e41621
-Adding type registration yes_no -> org.hibernate.type.YesNoType@67a20f67
-Adding type registration byte -> org.hibernate.type.ByteType@6a400542
-Adding type registration byte -> org.hibernate.type.ByteType@6a400542
-Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6a400542
-Adding type registration character -> org.hibernate.type.CharacterType@6a28ffa4
-Adding type registration char -> org.hibernate.type.CharacterType@6a28ffa4
-Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6a28ffa4
-Adding type registration short -> org.hibernate.type.ShortType@635eaaf1
-Adding type registration short -> org.hibernate.type.ShortType@635eaaf1
-Adding type registration java.lang.Short -> org.hibernate.type.ShortType@635eaaf1
-Adding type registration integer -> org.hibernate.type.IntegerType@5e82df6a
-Adding type registration int -> org.hibernate.type.IntegerType@5e82df6a
-Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5e82df6a
-Adding type registration long -> org.hibernate.type.LongType@31368b99
-Adding type registration long -> org.hibernate.type.LongType@31368b99
-Adding type registration java.lang.Long -> org.hibernate.type.LongType@31368b99
-Adding type registration float -> org.hibernate.type.FloatType@4f209819
-Adding type registration float -> org.hibernate.type.FloatType@4f209819
-Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4f209819
-Adding type registration double -> org.hibernate.type.DoubleType@1cbbffcd
-Adding type registration double -> org.hibernate.type.DoubleType@1cbbffcd
-Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1cbbffcd
-Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3c407114
-Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3c407114
-Adding type registration big_integer -> org.hibernate.type.BigIntegerType@619713e5
-Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@619713e5
-Adding type registration string -> org.hibernate.type.StringType@243c4f91
-Adding type registration java.lang.String -> org.hibernate.type.StringType@243c4f91
-Adding type registration url -> org.hibernate.type.UrlType@2f7298b
-Adding type registration java.net.URL -> org.hibernate.type.UrlType@2f7298b
-Adding type registration date -> org.hibernate.type.DateType@7714e963
-Adding type registration java.sql.Date -> org.hibernate.type.DateType@7714e963
-Adding type registration time -> org.hibernate.type.TimeType@192d43ce
-Adding type registration java.sql.Time -> org.hibernate.type.TimeType@192d43ce
-Adding type registration timestamp -> org.hibernate.type.TimestampType@479d31f3
-Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@479d31f3
-Adding type registration java.util.Date -> org.hibernate.type.TimestampType@479d31f3
-Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6e171cd7
-Adding type registration calendar -> org.hibernate.type.CalendarType@123ef382
-Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@123ef382
-Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@123ef382
-Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@61862a7f
-Adding type registration locale -> org.hibernate.type.LocaleType@42e99e4a
-Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@42e99e4a
-Adding type registration currency -> org.hibernate.type.CurrencyType@1a451d4d
-Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1a451d4d
-Adding type registration timezone -> org.hibernate.type.TimeZoneType@5e0826e7
-Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@5e0826e7
-Adding type registration class -> org.hibernate.type.ClassType@3ce1e309
-Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3ce1e309
-Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@323b36e0
-Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@323b36e0
-Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2e005c4b
-Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@359f7cdf
-Adding type registration binary -> org.hibernate.type.BinaryType@6b927fb
-Adding type registration byte[] -> org.hibernate.type.BinaryType@6b927fb
-Adding type registration [B -> org.hibernate.type.BinaryType@6b927fb
-Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7b9a4292
-Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7b9a4292
-Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7b9a4292
-Adding type registration image -> org.hibernate.type.ImageType@67d48005
-Adding type registration characters -> org.hibernate.type.CharArrayType@5876a9af
-Adding type registration char[] -> org.hibernate.type.CharArrayType@5876a9af
-Adding type registration [C -> org.hibernate.type.CharArrayType@5876a9af
-Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2a798d51
-Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2a798d51
-Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2a798d51
-Adding type registration text -> org.hibernate.type.TextType@dd8ba08
-Adding type registration blob -> org.hibernate.type.BlobType@77847718
-Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@77847718
-Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2b662a77
-Adding type registration wrapper_materialized_blob -> org.hibernate.type.WrappedMaterializedBlobType@1623b78d
-Adding type registration clob -> org.hibernate.type.ClobType@6cf0e0ba
-Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6cf0e0ba
-Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@42a48628
-Adding type registration wrapper_characters_clob -> org.hibernate.type.CharacterArrayClobType@1283bb96
-Adding type registration characters_clob -> org.hibernate.type.PrimitiveCharacterArrayClobType@3c19aaa5
-Adding type registration serializable -> org.hibernate.type.SerializableType@351d00c0
-Adding type registration object -> org.hibernate.type.ObjectType@4135c3b
-Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4135c3b
-Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@34a3d150
-Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2a4fb17b
-Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5c6648b0
-Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6f1de4c7
-Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@459e9125
-Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@128d2484
-Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7cc0cdad
-Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7c7b252e
+Adding type registration boolean -> org.hibernate.type.BooleanType@72a7c7e0
+Adding type registration boolean -> org.hibernate.type.BooleanType@72a7c7e0
+Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@72a7c7e0
+Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6e4784bc
+Adding type registration true_false -> org.hibernate.type.TrueFalseType@2667f029
+Adding type registration yes_no -> org.hibernate.type.YesNoType@a9cd3b1
+Adding type registration byte -> org.hibernate.type.ByteType@7e0b85f9
+Adding type registration byte -> org.hibernate.type.ByteType@7e0b85f9
+Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7e0b85f9
+Adding type registration character -> org.hibernate.type.CharacterType@1700915
+Adding type registration char -> org.hibernate.type.CharacterType@1700915
+Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1700915
+Adding type registration short -> org.hibernate.type.ShortType@1ddf84b8
+Adding type registration short -> org.hibernate.type.ShortType@1ddf84b8
+Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1ddf84b8
+Adding type registration integer -> org.hibernate.type.IntegerType@636be97c
+Adding type registration int -> org.hibernate.type.IntegerType@636be97c
+Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@636be97c
+Adding type registration long -> org.hibernate.type.LongType@3911c2a7
+Adding type registration long -> org.hibernate.type.LongType@3911c2a7
+Adding type registration java.lang.Long -> org.hibernate.type.LongType@3911c2a7
+Adding type registration float -> org.hibernate.type.FloatType@2145b572
+Adding type registration float -> org.hibernate.type.FloatType@2145b572
+Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2145b572
+Adding type registration double -> org.hibernate.type.DoubleType@481a996b
+Adding type registration double -> org.hibernate.type.DoubleType@481a996b
+Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@481a996b
+Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@c33b74f
+Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@c33b74f
+Adding type registration big_integer -> org.hibernate.type.BigIntegerType@68999068
+Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@68999068
+Adding type registration string -> org.hibernate.type.StringType@61df66b6
+Adding type registration java.lang.String -> org.hibernate.type.StringType@61df66b6
+Adding type registration url -> org.hibernate.type.UrlType@1ea9f6af
+Adding type registration java.net.URL -> org.hibernate.type.UrlType@1ea9f6af
+Adding type registration date -> org.hibernate.type.DateType@393671df
+Adding type registration java.sql.Date -> org.hibernate.type.DateType@393671df
+Adding type registration time -> org.hibernate.type.TimeType@1afd44cb
+Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1afd44cb
+Adding type registration timestamp -> org.hibernate.type.TimestampType@498d318c
+Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@498d318c
+Adding type registration java.util.Date -> org.hibernate.type.TimestampType@498d318c
+Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@795cd85e
+Adding type registration calendar -> org.hibernate.type.CalendarType@384ad17b
+Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@384ad17b
+Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@384ad17b
+Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7334aada
+Adding type registration locale -> org.hibernate.type.LocaleType@52e6fdee
+Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@52e6fdee
+Adding type registration currency -> org.hibernate.type.CurrencyType@15ff3e9e
+Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@15ff3e9e
+Adding type registration timezone -> org.hibernate.type.TimeZoneType@8dbdac1
+Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@8dbdac1
+Adding type registration class -> org.hibernate.type.ClassType@158da8e
+Adding type registration java.lang.Class -> org.hibernate.type.ClassType@158da8e
+Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@694abbdc
+Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@694abbdc
+Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5ffead27
+Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@4f6ee6e4
+Adding type registration binary -> org.hibernate.type.BinaryType@4fb61f4a
+Adding type registration byte[] -> org.hibernate.type.BinaryType@4fb61f4a
+Adding type registration [B -> org.hibernate.type.BinaryType@4fb61f4a
+Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4cc451f2
+Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4cc451f2
+Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4cc451f2
+Adding type registration image -> org.hibernate.type.ImageType@12468a38
+Adding type registration characters -> org.hibernate.type.CharArrayType@5b239d7d
+Adding type registration char[] -> org.hibernate.type.CharArrayType@5b239d7d
+Adding type registration [C -> org.hibernate.type.CharArrayType@5b239d7d
+Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@52bf72b5
+Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@52bf72b5
+Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@52bf72b5
+Adding type registration text -> org.hibernate.type.TextType@6c64cb25
+Adding type registration blob -> org.hibernate.type.BlobType@57a3af25
+Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@57a3af25
+Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5c33f1a9
+Adding type registration wrapper_materialized_blob -> org.hibernate.type.WrappedMaterializedBlobType@6adbc9d
+Adding type registration clob -> org.hibernate.type.ClobType@130d63be
+Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@130d63be
+Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6aeb35e6
+Adding type registration wrapper_characters_clob -> org.hibernate.type.CharacterArrayClobType@f6efaab
+Adding type registration characters_clob -> org.hibernate.type.PrimitiveCharacterArrayClobType@409bf450
+Adding type registration serializable -> org.hibernate.type.SerializableType@55b699ef
+Adding type registration object -> org.hibernate.type.ObjectType@31304f14
+Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@31304f14
+Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5c6648b0
+Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6f1de4c7
+Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@459e9125
+Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@128d2484
+Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7cc0cdad
+Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7c7b252e
+Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4d5d943d
+Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@368f2016
 Hibernate Commons Annotations 3.2.0.Final
 Hibernate 3.6.10.Final
 hibernate.properties not found
@@ -381,120 +381,120 @@ Named query checking : enabled
 Check Nullability in Core (should be disabled when Bean Validation is on): enabled
 building session factory
 Statistics initialized [enabled=false]}
-Adding type registration boolean -> org.hibernate.type.BooleanType@3e92efc3
-Adding type registration boolean -> org.hibernate.type.BooleanType@3e92efc3
-Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3e92efc3
-Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@29626d54
-Adding type registration true_false -> org.hibernate.type.TrueFalseType@10e41621
-Adding type registration yes_no -> org.hibernate.type.YesNoType@67a20f67
-Adding type registration byte -> org.hibernate.type.ByteType@6a400542
-Adding type registration byte -> org.hibernate.type.ByteType@6a400542
-Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6a400542
-Adding type registration character -> org.hibernate.type.CharacterType@6a28ffa4
-Adding type registration char -> org.hibernate.type.CharacterType@6a28ffa4
-Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6a28ffa4
-Adding type registration short -> org.hibernate.type.ShortType@635eaaf1
-Adding type registration short -> org.hibernate.type.ShortType@635eaaf1
-Adding type registration java.lang.Short -> org.hibernate.type.ShortType@635eaaf1
-Adding type registration integer -> org.hibernate.type.IntegerType@5e82df6a
-Adding type registration int -> org.hibernate.type.IntegerType@5e82df6a
-Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5e82df6a
-Adding type registration long -> org.hibernate.type.LongType@31368b99
-Adding type registration long -> org.hibernate.type.LongType@31368b99
-Adding type registration java.lang.Long -> org.hibernate.type.LongType@31368b99
-Adding type registration float -> org.hibernate.type.FloatType@4f209819
-Adding type registration float -> org.hibernate.type.FloatType@4f209819
-Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4f209819
-Adding type registration double -> org.hibernate.type.DoubleType@1cbbffcd
-Adding type registration double -> org.hibernate.type.DoubleType@1cbbffcd
-Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1cbbffcd
-Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3c407114
-Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3c407114
-Adding type registration big_integer -> org.hibernate.type.BigIntegerType@619713e5
-Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@619713e5
-Adding type registration string -> org.hibernate.type.StringType@243c4f91
-Adding type registration java.lang.String -> org.hibernate.type.StringType@243c4f91
-Adding type registration url -> org.hibernate.type.UrlType@2f7298b
-Adding type registration java.net.URL -> org.hibernate.type.UrlType@2f7298b
-Adding type registration date -> org.hibernate.type.DateType@7714e963
-Adding type registration java.sql.Date -> org.hibernate.type.DateType@7714e963
-Adding type registration time -> org.hibernate.type.TimeType@192d43ce
-Adding type registration java.sql.Time -> org.hibernate.type.TimeType@192d43ce
-Adding type registration timestamp -> org.hibernate.type.TimestampType@479d31f3
-Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@479d31f3
-Adding type registration java.util.Date -> org.hibernate.type.TimestampType@479d31f3
-Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6e171cd7
-Adding type registration calendar -> org.hibernate.type.CalendarType@123ef382
-Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@123ef382
-Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@123ef382
-Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@61862a7f
-Adding type registration locale -> org.hibernate.type.LocaleType@42e99e4a
-Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@42e99e4a
-Adding type registration currency -> org.hibernate.type.CurrencyType@1a451d4d
-Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1a451d4d
-Adding type registration timezone -> org.hibernate.type.TimeZoneType@5e0826e7
-Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@5e0826e7
-Adding type registration class -> org.hibernate.type.ClassType@3ce1e309
-Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3ce1e309
-Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@323b36e0
-Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@323b36e0
-Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2e005c4b
-Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@359f7cdf
-Adding type registration binary -> org.hibernate.type.BinaryType@6b927fb
-Adding type registration byte[] -> org.hibernate.type.BinaryType@6b927fb
-Adding type registration [B -> org.hibernate.type.BinaryType@6b927fb
-Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7b9a4292
-Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7b9a4292
-Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7b9a4292
-Adding type registration image -> org.hibernate.type.ImageType@67d48005
-Adding type registration characters -> org.hibernate.type.CharArrayType@5876a9af
-Adding type registration char[] -> org.hibernate.type.CharArrayType@5876a9af
-Adding type registration [C -> org.hibernate.type.CharArrayType@5876a9af
-Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2a798d51
-Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2a798d51
-Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2a798d51
-Adding type registration text -> org.hibernate.type.TextType@dd8ba08
-Adding type registration blob -> org.hibernate.type.BlobType@77847718
-Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@77847718
-Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2b662a77
-Adding type registration wrapper_materialized_blob -> org.hibernate.type.WrappedMaterializedBlobType@1623b78d
-Adding type registration clob -> org.hibernate.type.ClobType@6cf0e0ba
-Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6cf0e0ba
-Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@42a48628
-Adding type registration wrapper_characters_clob -> org.hibernate.type.CharacterArrayClobType@1283bb96
-Adding type registration characters_clob -> org.hibernate.type.PrimitiveCharacterArrayClobType@3c19aaa5
-Adding type registration serializable -> org.hibernate.type.SerializableType@351d00c0
-Adding type registration object -> org.hibernate.type.ObjectType@4135c3b
-Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4135c3b
-Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3e2055d6
-Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@50029372
-Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@e3b3b2f
-Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@50f6ac94
-Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6cc4cdb9
-Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@28194a50
-Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7f2cfe3f
-Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1a5b6f42
-Adding type registration characters_clob -> org.hibernate.type.PrimitiveCharacterArrayClobType@1c742ed4
-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3c19aaa5
-Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3feb2dda
-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@42a48628
-Adding type registration wrapper_materialized_blob -> org.hibernate.type.WrappedMaterializedBlobType@14fc5f04
-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1623b78d
-Adding type registration wrapper_characters_clob -> org.hibernate.type.CharacterArrayClobType@6a8658ff
-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1283bb96
-Adding type registration blob -> org.hibernate.type.BlobType@15888343
-Type registration [blob] overrides previous : org.hibernate.type.BlobType@77847718
-Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@15888343
-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@77847718
-Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@33ecda92
-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@2b662a77
-Adding type registration clob -> org.hibernate.type.ClobType@6e2829c7
-Type registration [clob] overrides previous : org.hibernate.type.ClobType@6cf0e0ba
-Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6e2829c7
-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@6cf0e0ba
+Adding type registration boolean -> org.hibernate.type.BooleanType@72a7c7e0
+Adding type registration boolean -> org.hibernate.type.BooleanType@72a7c7e0
+Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@72a7c7e0
+Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6e4784bc
+Adding type registration true_false -> org.hibernate.type.TrueFalseType@2667f029
+Adding type registration yes_no -> org.hibernate.type.YesNoType@a9cd3b1
+Adding type registration byte -> org.hibernate.type.ByteType@7e0b85f9
+Adding type registration byte -> org.hibernate.type.ByteType@7e0b85f9
+Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7e0b85f9
+Adding type registration character -> org.hibernate.type.CharacterType@1700915
+Adding type registration char -> org.hibernate.type.CharacterType@1700915
+Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1700915
+Adding type registration short -> org.hibernate.type.ShortType@1ddf84b8
+Adding type registration short -> org.hibernate.type.ShortType@1ddf84b8
+Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1ddf84b8
+Adding type registration integer -> org.hibernate.type.IntegerType@636be97c
+Adding type registration int -> org.hibernate.type.IntegerType@636be97c
+Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@636be97c
+Adding type registration long -> org.hibernate.type.LongType@3911c2a7
+Adding type registration long -> org.hibernate.type.LongType@3911c2a7
+Adding type registration java.lang.Long -> org.hibernate.type.LongType@3911c2a7
+Adding type registration float -> org.hibernate.type.FloatType@2145b572
+Adding type registration float -> org.hibernate.type.FloatType@2145b572
+Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2145b572
+Adding type registration double -> org.hibernate.type.DoubleType@481a996b
+Adding type registration double -> org.hibernate.type.DoubleType@481a996b
+Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@481a996b
+Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@c33b74f
+Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@c33b74f
+Adding type registration big_integer -> org.hibernate.type.BigIntegerType@68999068
+Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@68999068
+Adding type registration string -> org.hibernate.type.StringType@61df66b6
+Adding type registration java.lang.String -> org.hibernate.type.StringType@61df66b6
+Adding type registration url -> org.hibernate.type.UrlType@1ea9f6af
+Adding type registration java.net.URL -> org.hibernate.type.UrlType@1ea9f6af
+Adding type registration date -> org.hibernate.type.DateType@393671df
+Adding type registration java.sql.Date -> org.hibernate.type.DateType@393671df
+Adding type registration time -> org.hibernate.type.TimeType@1afd44cb
+Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1afd44cb
+Adding type registration timestamp -> org.hibernate.type.TimestampType@498d318c
+Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@498d318c
+Adding type registration java.util.Date -> org.hibernate.type.TimestampType@498d318c
+Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@795cd85e
+Adding type registration calendar -> org.hibernate.type.CalendarType@384ad17b
+Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@384ad17b
+Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@384ad17b
+Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7334aada
+Adding type registration locale -> org.hibernate.type.LocaleType@52e6fdee
+Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@52e6fdee
+Adding type registration currency -> org.hibernate.type.CurrencyType@15ff3e9e
+Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@15ff3e9e
+Adding type registration timezone -> org.hibernate.type.TimeZoneType@8dbdac1
+Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@8dbdac1
+Adding type registration class -> org.hibernate.type.ClassType@158da8e
+Adding type registration java.lang.Class -> org.hibernate.type.ClassType@158da8e
+Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@694abbdc
+Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@694abbdc
+Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5ffead27
+Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@4f6ee6e4
+Adding type registration binary -> org.hibernate.type.BinaryType@4fb61f4a
+Adding type registration byte[] -> org.hibernate.type.BinaryType@4fb61f4a
+Adding type registration [B -> org.hibernate.type.BinaryType@4fb61f4a
+Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4cc451f2
+Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4cc451f2
+Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4cc451f2
+Adding type registration image -> org.hibernate.type.ImageType@12468a38
+Adding type registration characters -> org.hibernate.type.CharArrayType@5b239d7d
+Adding type registration char[] -> org.hibernate.type.CharArrayType@5b239d7d
+Adding type registration [C -> org.hibernate.type.CharArrayType@5b239d7d
+Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@52bf72b5
+Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@52bf72b5
+Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@52bf72b5
+Adding type registration text -> org.hibernate.type.TextType@6c64cb25
+Adding type registration blob -> org.hibernate.type.BlobType@57a3af25
+Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@57a3af25
+Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5c33f1a9
+Adding type registration wrapper_materialized_blob -> org.hibernate.type.WrappedMaterializedBlobType@6adbc9d
+Adding type registration clob -> org.hibernate.type.ClobType@130d63be
+Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@130d63be
+Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6aeb35e6
+Adding type registration wrapper_characters_clob -> org.hibernate.type.CharacterArrayClobType@f6efaab
+Adding type registration characters_clob -> org.hibernate.type.PrimitiveCharacterArrayClobType@409bf450
+Adding type registration serializable -> org.hibernate.type.SerializableType@55b699ef
+Adding type registration object -> org.hibernate.type.ObjectType@31304f14
+Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@31304f14
+Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@e3b3b2f
+Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@50f6ac94
+Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@6cc4cdb9
+Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@28194a50
+Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7f2cfe3f
+Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1a5b6f42
+Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5038d0b5
+Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@32115b28
+Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1c742ed4
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@6aeb35e6
+Adding type registration wrapper_materialized_blob -> org.hibernate.type.WrappedMaterializedBlobType@3feb2dda
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@6adbc9d
+Adding type registration wrapper_characters_clob -> org.hibernate.type.CharacterArrayClobType@333d4a8c
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@f6efaab
+Adding type registration characters_clob -> org.hibernate.type.PrimitiveCharacterArrayClobType@55de24cc
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@409bf450
+Adding type registration blob -> org.hibernate.type.BlobType@14fc5f04
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@57a3af25
+Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@14fc5f04
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@57a3af25
+Adding type registration clob -> org.hibernate.type.ClobType@6a8658ff
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@130d63be
+Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6a8658ff
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@130d63be
+Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6e2829c7
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@5c33f1a9
 Session factory constructed with filter configurations : {}
 instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, java.vm.version=25.121-b13, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, javax.persistance.validation.mode=none, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/sonorks/git/IngWeb/EjemploSpring, java.runtime.version=1.8.0_121-b13, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate3.SpringSessionContext, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
-, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.transaction.factory_class=org.springframework.orm.hibernate3.SpringTransactionFactory, os.version=4.4.0-72-generic, user.home=/home/sonorks, user.timezone=America/Bogota, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/home/sonorks/git/IngWeb/EjemploSpring/bin:/home/sonorks/Desktop/Spring4/com.springsource.org.aopalliance-1.0.0.jar:/home/sonorks/Desktop/Spring4/commons-logging.jar:/home/sonorks/Desktop/Spring4/spring-aop-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-beans-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-context-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-core-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-expression-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-jdbc-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-orm-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-test-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-tx-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-web-4.1.6.RELEASE.jar:/home/sonorks/Desktop/LibreriasHibernate/antlr-2.7.6.jar:/home/sonorks/Desktop/LibreriasHibernate/commons-collections-3.1.jar:/home/sonorks/Desktop/LibreriasHibernate/dom4j-1.6.1.jar:/home/sonorks/Desktop/LibreriasHibernate/hibernate3.jar:/home/sonorks/Desktop/LibreriasHibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/sonorks/Desktop/LibreriasHibernate/javassist-3.12.0.GA.jar:/home/sonorks/Desktop/LibreriasHibernate/jta-1.1.jar:/home/sonorks/Desktop/LibreriasHibernate/slf4j-api-1.6.1.jar:/home/sonorks/Desktop/LibreriasHibernate/slf4j-log4j12-1.7.2.jar:/home/sonorks/Desktop/apache-log4j-1.2.17/log4j-1.2.17.jar:/home/sonorks/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/home/sonorks/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/home/sonorks/Downloads/mysql-connector-java-5.1.22-bin.jar:/home/sonorks/eclipse/jee-oxygen/eclipse/configuration/org.eclipse.osgi/395/0/.cp:/home/sonorks/eclipse/jee-oxygen/eclipse/configuration/org.eclipse.osgi/394/0/.cp, user.name=sonorks, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-oracle/jre, sun.java.command=org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 37147 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.edu.udea.iw.dao.UsuarioDaoTest, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_121, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, java.vendor=Oracle Corporation, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.connection.provider_class=org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.transaction.factory_class=org.springframework.orm.hibernate3.SpringTransactionFactory, os.version=4.4.0-72-generic, user.home=/home/sonorks, user.timezone=America/Bogota, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/home/sonorks/git/IngWeb/EjemploSpring/bin:/home/sonorks/Desktop/Spring4/com.springsource.org.aopalliance-1.0.0.jar:/home/sonorks/Desktop/Spring4/commons-logging.jar:/home/sonorks/Desktop/Spring4/spring-aop-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-beans-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-context-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-core-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-expression-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-jdbc-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-orm-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-test-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-tx-4.1.6.RELEASE.jar:/home/sonorks/Desktop/Spring4/spring-web-4.1.6.RELEASE.jar:/home/sonorks/Desktop/LibreriasHibernate/antlr-2.7.6.jar:/home/sonorks/Desktop/LibreriasHibernate/commons-collections-3.1.jar:/home/sonorks/Desktop/LibreriasHibernate/dom4j-1.6.1.jar:/home/sonorks/Desktop/LibreriasHibernate/hibernate3.jar:/home/sonorks/Desktop/LibreriasHibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/sonorks/Desktop/LibreriasHibernate/javassist-3.12.0.GA.jar:/home/sonorks/Desktop/LibreriasHibernate/jta-1.1.jar:/home/sonorks/Desktop/LibreriasHibernate/slf4j-api-1.6.1.jar:/home/sonorks/Desktop/LibreriasHibernate/slf4j-log4j12-1.7.2.jar:/home/sonorks/Desktop/apache-log4j-1.2.17/log4j-1.2.17.jar:/home/sonorks/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/home/sonorks/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/home/sonorks/Downloads/mysql-connector-java-5.1.22-bin.jar:/home/sonorks/eclipse/jee-oxygen/eclipse/configuration/org.eclipse.osgi/395/0/.cp:/home/sonorks/eclipse/jee-oxygen/eclipse/configuration/org.eclipse.osgi/394/0/.cp, user.name=sonorks, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-oracle/jre, sun.java.command=org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 40441 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.edu.udea.iw.bl.UsuarioBLTest, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_121, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, java.vendor=Oracle Corporation, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.connection.provider_class=org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
 Setting dialect [org.hibernate.dialect.MySQLDialect]
 Setting dialect [org.hibernate.dialect.MySQLDialect]
 Setting dialect [org.hibernate.dialect.MySQLDialect]
@@ -595,7 +595,7 @@ Static select for action ACTION_MERGE on entity com.edu.udea.iw.dto.Usuario: sel
 Static select for action ACTION_REFRESH on entity com.edu.udea.iw.dto.Usuario: select usuario0_.LOGIN as LOGIN2_0_, usuario0_.Apellidos as Apellidos2_0_, usuario0_.NOMBRES as NOMBRES2_0_, usuario0_.CONTRASENA as CONTRASENA2_0_, usuario0_.ROL as ROL2_0_ from usuarios usuario0_ where usuario0_.LOGIN=?
 Static select for one-to-many com.edu.udea.iw.dto.Cliente.direcciones: select direccione0_.cliente as cliente3_1_, direccione0_.codigo as codigo1_, direccione0_.cliente as cliente1_, direccione0_.codigo as codigo4_0_, direccione0_.cliente as cliente4_0_, direccione0_.DIRECCION as DIRECCION4_0_, direccione0_.TELEFONO as TELEFONO4_0_, direccione0_.CIUDAD as CIUDAD4_0_, direccione0_.PREFERIDA as PREFERIDA4_0_ from direcciones direccione0_ where direccione0_.cliente=?
 initializing class SessionFactoryObjectFactory
-registered: bea58a23-8783-4efd-aabd-d6de4c0c50d7 (unnamed)
+registered: 92816d87-c8f5-4231-95ad-2fed0fbd811a (unnamed)
 Not binding factory to JNDI, no JNDI name configured
 instantiated session factory
 Checking 0 named HQL queries
@@ -675,6 +675,26 @@ Found bean property 'class' of type [java.lang.Class]
 Found bean property 'sessionFactory' of type [org.hibernate.SessionFactory]
 Returning cached instance of singleton bean 'sessionFactory'
 Finished creating instance of bean 'DireccionDaoSpring'
+Creating shared instance of singleton bean 'ClienteBL'
+Creating instance of bean 'ClienteBL'
+Eagerly caching bean 'ClienteBL' to allow for resolving potential circular references
+Getting BeanInfo for class [com.edu.udea.iw.bl.ClienteBL]
+Caching PropertyDescriptors for class [com.edu.udea.iw.bl.ClienteBL]
+Found bean property 'class' of type [java.lang.Class]
+Found bean property 'clienteDao' of type [com.edu.udea.iw.dao.ClienteDaoSpring]
+Found bean property 'usuarioDao' of type [com.edu.udea.iw.dao.UsuarioDaoSpring]
+Returning cached instance of singleton bean 'ClienteDaoSpring'
+Returning cached instance of singleton bean 'UsuarioDaoSpring'
+Finished creating instance of bean 'ClienteBL'
+Creating shared instance of singleton bean 'UsuarioBL'
+Creating instance of bean 'UsuarioBL'
+Eagerly caching bean 'UsuarioBL' to allow for resolving potential circular references
+Getting BeanInfo for class [com.edu.udea.iw.bl.UsuarioBL]
+Caching PropertyDescriptors for class [com.edu.udea.iw.bl.UsuarioBL]
+Found bean property 'class' of type [java.lang.Class]
+Found bean property 'usuarioDao' of type [com.edu.udea.iw.dao.UsuarioDaoSpring]
+Returning cached instance of singleton bean 'UsuarioDaoSpring'
+Finished creating instance of bean 'UsuarioBL'
 Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
 Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
@@ -682,108 +702,70 @@ Returning cached instance of singleton bean 'org.springframework.context.annotat
 Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
 Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
 Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1f53a5dc]
+Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@39ac0c0a]
 Returning cached instance of singleton bean 'lifecycleProcessor'
-Publishing event in org.springframework.context.support.GenericApplicationContext@402f32ff: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Sat Apr 08 20:42:54 COT 2017]; root of context hierarchy]
+Publishing event in org.springframework.context.support.GenericApplicationContext@402f32ff: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Tue Apr 18 18:58:57 COT 2017]; root of context hierarchy]
 getProperty("spring.liveBeansView.mbeanDomain", String)
 Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
 Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
 Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-Storing ApplicationContext in cache under key [[MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
-Spring test ApplicationContext cache statistics: [ContextCache@327bcebd size = 1, hitCount = 0, missCount = 1, parentContextCount = 0]
-Getting BeanInfo for class [com.edu.udea.iw.dao.UsuarioDaoTest]
-Caching PropertyDescriptors for class [com.edu.udea.iw.dao.UsuarioDaoTest]
+Storing ApplicationContext in cache under key [[MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+Spring test ApplicationContext cache statistics: [ContextCache@38b27cdc size = 1, hitCount = 0, missCount = 1, parentContextCount = 0]
+Getting BeanInfo for class [com.edu.udea.iw.bl.UsuarioBLTest]
+Caching PropertyDescriptors for class [com.edu.udea.iw.bl.UsuarioBLTest]
 Found bean property 'class' of type [java.lang.Class]
-Processing injected element of bean 'com.edu.udea.iw.dao.UsuarioDaoTest': AutowiredFieldElement for com.edu.udea.iw.dao.InterfaceUsuarioDao com.edu.udea.iw.dao.UsuarioDaoTest.usuarioDao
-Returning cached instance of singleton bean 'UsuarioDaoSpring'
-Autowiring by type from bean name 'com.edu.udea.iw.dao.UsuarioDaoTest' to bean named 'UsuarioDaoSpring'
-beforeTestMethod(): instance [com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55], method [public void com.edu.udea.iw.dao.UsuarioDaoTest.testObtener()]
-Adding transactional method 'UsuarioDaoTest.testObtener' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Explicit transaction definition [PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''] found for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55, testMethod = testObtener@UsuarioDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
-Retrieved @TransactionConfiguration attributes [null] for test class [class com.edu.udea.iw.dao.UsuarioDaoTest].
-Retrieved TransactionConfigurationAttributes [TransactionConfigurationAttributes@7c8c9a05 transactionManagerName = '', defaultRollback = true] for class [class com.edu.udea.iw.dao.UsuarioDaoTest].
-Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
-Spring test ApplicationContext cache statistics: [ContextCache@327bcebd size = 1, hitCount = 1, missCount = 1, parentContextCount = 0]
+Processing injected element of bean 'com.edu.udea.iw.bl.UsuarioBLTest': AutowiredFieldElement for com.edu.udea.iw.bl.UsuarioBL com.edu.udea.iw.bl.UsuarioBLTest.usuario
+Returning cached instance of singleton bean 'UsuarioBL'
+Autowiring by type from bean name 'com.edu.udea.iw.bl.UsuarioBLTest' to bean named 'UsuarioBL'
+beforeTestMethod(): instance [com.edu.udea.iw.bl.UsuarioBLTest@6df97b55], method [public void com.edu.udea.iw.bl.UsuarioBLTest.test()]
+Adding transactional method 'UsuarioBLTest.test' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Explicit transaction definition [PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''] found for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = com.edu.udea.iw.bl.UsuarioBLTest@6df97b55, testMethod = test@UsuarioBLTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+Retrieved @TransactionConfiguration attributes [null] for test class [class com.edu.udea.iw.bl.UsuarioBLTest].
+Retrieved TransactionConfigurationAttributes [TransactionConfigurationAttributes@78d6692f transactionManagerName = '', defaultRollback = true] for class [class com.edu.udea.iw.bl.UsuarioBLTest].
+Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+Spring test ApplicationContext cache statistics: [ContextCache@38b27cdc size = 1, hitCount = 1, missCount = 1, parentContextCount = 0]
 Returning cached instance of singleton bean 'txManager'
-No method-level @Rollback override: using default rollback [true] for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55, testMethod = testObtener@UsuarioDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
-Creating new transaction with name [com.edu.udea.iw.dao.UsuarioDaoTest.testObtener]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-opened session at timestamp: 14917021757
-Opened new Session [org.hibernate.impl.SessionImpl@6f63b475] for Hibernate transaction
-Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@6f63b475]
+No method-level @Rollback override: using default rollback [true] for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = com.edu.udea.iw.bl.UsuarioBLTest@6df97b55, testMethod = test@UsuarioBLTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Creating new transaction with name [com.edu.udea.iw.bl.UsuarioBLTest.test]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+opened session at timestamp: 14925599383
+Opened new Session [org.hibernate.impl.SessionImpl@29ca3d04] for Hibernate transaction
+Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@29ca3d04]
 begin
 opening JDBC connection
 Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/ciudades]
 current autocommit status: true
 disabling autocommit
-Exposing Hibernate transaction as JDBC transaction [com.mysql.jdbc.JDBC4Connection@5a1de7fb]
-Bound value [org.springframework.jdbc.datasource.ConnectionHolder@29a0cdb] for key [org.springframework.jdbc.datasource.DriverManagerDataSource@335b5620] to thread [main]
-Bound value [org.springframework.orm.hibernate3.SessionHolder@32a68f4f] for key [org.hibernate.impl.SessionFactoryImpl@18f8cd79] to thread [main]
+Exposing Hibernate transaction as JDBC transaction [com.mysql.jdbc.JDBC4Connection@73194df]
+Bound value [org.springframework.jdbc.datasource.ConnectionHolder@3c9c0d96] for key [org.springframework.jdbc.datasource.DriverManagerDataSource@6eb2384f] to thread [main]
+Bound value [org.springframework.orm.hibernate3.SessionHolder@3a4621bd] for key [org.hibernate.impl.SessionFactoryImpl@50029372] to thread [main]
 Initializing transaction synchronization
-Began transaction (1) for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55, testMethod = testObtener@UsuarioDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@73194df]; rollback [true]
-Iniciando prueba de obtener  usuarios de la BD
-Retrieved value [org.springframework.orm.hibernate3.SessionHolder@32a68f4f] for key [org.hibernate.impl.SessionFactoryImpl@18f8cd79] bound to thread [main]
-loading entity: [com.edu.udea.iw.dto.Usuario#elver]
-about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-select usuario0_.LOGIN as LOGIN2_1_, usuario0_.Apellidos as Apellidos2_1_, usuario0_.NOMBRES as NOMBRES2_1_, usuario0_.CONTRASENA as CONTRASENA2_1_, usuario0_.ROL as ROL2_1_, rol1_.CODIGO as CODIGO1_0_, rol1_.NOMBRE as NOMBRE1_0_ from usuarios usuario0_ left outer join roles rol1_ on usuario0_.ROL=rol1_.CODIGO where usuario0_.LOGIN=?
-about to open ResultSet (open ResultSets: 0, globally: 0)
-result set row: 0
-result row: EntityKey[com.edu.udea.iw.dto.Rol#ADM], EntityKey[com.edu.udea.iw.dto.Usuario#elver]
-about to close ResultSet (open ResultSets: 1, globally: 1)
-about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-resolving associations for [com.edu.udea.iw.dto.Rol#ADM]
-done materializing entity [com.edu.udea.iw.dto.Rol#ADM]
-resolving associations for [com.edu.udea.iw.dto.Usuario#elver]
-done materializing entity [com.edu.udea.iw.dto.Usuario#elver]
-initializing non-lazy collections
-done entity load
-Retrieved value [org.springframework.orm.hibernate3.SessionHolder@32a68f4f] for key [org.hibernate.impl.SessionFactoryImpl@18f8cd79] bound to thread [main]
-processing flush-time cascades
-dirty checking collections
-Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
-Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-listing entities:
-com.edu.udea.iw.dto.Rol{codigo=ADM, nombre=Administrador}
-com.edu.udea.iw.dto.Usuario{Apellidos=Suarez, Nombres=Elver, Contrasena=1g0/KkFdhrmg1DYJWFdd2A==, Login=elver, Rol=com.edu.udea.iw.dto.Rol#ADM}
-about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-select this_.LOGIN as LOGIN2_1_, this_.Apellidos as Apellidos2_1_, this_.NOMBRES as NOMBRES2_1_, this_.CONTRASENA as CONTRASENA2_1_, this_.ROL as ROL2_1_, rol2_.CODIGO as CODIGO1_0_, rol2_.NOMBRE as NOMBRE1_0_ from usuarios this_ left outer join roles rol2_ on this_.ROL=rol2_.CODIGO
-about to open ResultSet (open ResultSets: 0, globally: 0)
-result set row: 0
-result row: EntityKey[com.edu.udea.iw.dto.Rol#ADM], EntityKey[com.edu.udea.iw.dto.Usuario#elver]
-result set row: 1
-result row: EntityKey[com.edu.udea.iw.dto.Rol#AUD], EntityKey[com.edu.udea.iw.dto.Usuario#juan]
-about to close ResultSet (open ResultSets: 1, globally: 1)
-about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-resolving associations for [com.edu.udea.iw.dto.Rol#AUD]
-done materializing entity [com.edu.udea.iw.dto.Rol#AUD]
-resolving associations for [com.edu.udea.iw.dto.Usuario#juan]
-done materializing entity [com.edu.udea.iw.dto.Usuario#juan]
-initializing non-lazy collections
-afterTestMethod(): instance [com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55], method [public void com.edu.udea.iw.dao.UsuarioDaoTest.testObtener()], exception [null]
-Ending transaction for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55, testMethod = testObtener@UsuarioDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction status [org.springframework.transaction.support.DefaultTransactionStatus@6dee4f1b]; rollback [true]
+Began transaction (1) for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = com.edu.udea.iw.bl.UsuarioBLTest@6df97b55, testMethod = test@UsuarioBLTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@31dadd46]; rollback [true]
+afterTestMethod(): instance [com.edu.udea.iw.bl.UsuarioBLTest@6df97b55], method [public void com.edu.udea.iw.bl.UsuarioBLTest.test()], exception [null]
+Ending transaction for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = com.edu.udea.iw.bl.UsuarioBLTest@6df97b55, testMethod = test@UsuarioBLTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction status [org.springframework.transaction.support.DefaultTransactionStatus@6bca7e0d]; rollback [true]
 Triggering beforeCompletion synchronization
 Initiating transaction rollback
-Rolling back Hibernate transaction on Session [org.hibernate.impl.SessionImpl@6f63b475]
+Rolling back Hibernate transaction on Session [org.hibernate.impl.SessionImpl@29ca3d04]
 rollback
 re-enabling autocommit
 rolled back JDBC Connection
 transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
 Triggering afterCompletion synchronization
 Clearing transaction synchronization
-Removed value [org.springframework.orm.hibernate3.SessionHolder@32a68f4f] for key [org.hibernate.impl.SessionFactoryImpl@18f8cd79] from thread [main]
-Removed value [org.springframework.jdbc.datasource.ConnectionHolder@29a0cdb] for key [org.springframework.jdbc.datasource.DriverManagerDataSource@335b5620] from thread [main]
-Closing Hibernate Session [org.hibernate.impl.SessionImpl@6f63b475] after transaction
+Removed value [org.springframework.orm.hibernate3.SessionHolder@3a4621bd] for key [org.hibernate.impl.SessionFactoryImpl@50029372] from thread [main]
+Removed value [org.springframework.jdbc.datasource.ConnectionHolder@3c9c0d96] for key [org.springframework.jdbc.datasource.DriverManagerDataSource@6eb2384f] from thread [main]
+Closing Hibernate Session [org.hibernate.impl.SessionImpl@29ca3d04] after transaction
 Closing Hibernate Session
 releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
 transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-Rolled back transaction for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55, testMethod = testObtener@UsuarioDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
-After test method: context [DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = com.edu.udea.iw.dao.UsuarioDaoTest@6df97b55, testMethod = testObtener@UsuarioDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
-afterTestClass(): class [com.edu.udea.iw.dao.UsuarioDaoTest]
-After test class: context [DefaultTestContext@3cbbc1e0 testClass = UsuarioDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioDaoTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
-Closing org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Sat Apr 08 20:42:54 COT 2017]; root of context hierarchy
-Publishing event in org.springframework.context.support.GenericApplicationContext@402f32ff: org.springframework.context.event.ContextClosedEvent[source=org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Sat Apr 08 20:42:54 COT 2017]; root of context hierarchy]
+Rolled back transaction for test context [DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = com.edu.udea.iw.bl.UsuarioBLTest@6df97b55, testMethod = test@UsuarioBLTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+After test method: context [DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = com.edu.udea.iw.bl.UsuarioBLTest@6df97b55, testMethod = test@UsuarioBLTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+afterTestClass(): class [com.edu.udea.iw.bl.UsuarioBLTest]
+After test class: context [DefaultTestContext@3cbbc1e0 testClass = UsuarioBLTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@35fb3008 testClass = UsuarioBLTest, locations = '{classpath:SpringBeanDefinition.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+Closing org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Tue Apr 18 18:58:57 COT 2017]; root of context hierarchy
+Publishing event in org.springframework.context.support.GenericApplicationContext@402f32ff: org.springframework.context.event.ContextClosedEvent[source=org.springframework.context.support.GenericApplicationContext@402f32ff: startup date [Tue Apr 18 18:58:57 COT 2017]; root of context hierarchy]
 Returning cached instance of singleton bean 'lifecycleProcessor'
-Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ecd23d9: defining beans [dataSource,sessionFactory,txManager,CiudadDaoSpring,ClienteDaoSpring,UsuarioDaoSpring,RolDaoSpring,DireccionDaoSpring,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
-Retrieved dependent beans for bean 'UsuarioDaoSpring': [com.edu.udea.iw.dao.UsuarioDaoTest]
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ecd23d9: defining beans [dataSource,sessionFactory,txManager,CiudadDaoSpring,ClienteDaoSpring,UsuarioDaoSpring,RolDaoSpring,DireccionDaoSpring,ClienteBL,UsuarioBL,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+Retrieved dependent beans for bean 'UsuarioBL': [com.edu.udea.iw.bl.UsuarioBLTest]
 Invoking destroy() on bean with name 'sessionFactory'
 Closing Hibernate SessionFactory
 closing

@@ -54,7 +54,7 @@ public class ClienteDaoSpring implements InterfaceClientesDao {
 		
 		}
 		Cliente cl = new Cliente();
-		cl.setCedula("1035436913");
+		cl.setCedula("1035436986");
 		cl.setApellidos("Vasquez Giraldo");
 		cl.setNombres("Julian");
 		cl.setEmail("julian.vasquezg@udea.edu.co");
@@ -70,5 +70,15 @@ public class ClienteDaoSpring implements InterfaceClientesDao {
 		}
 		
 		
+	}
+	public void guardarCliente(Cliente cliente) throws ExceptionController {
+		Session session = null;
+		try {
+			session = sessionFactory.getCurrentSession();
+			session.saveOrUpdate(cliente); //retorna la busqueda en la tabla seleccionada
+			//user = (Usuario) criteria.list().get(0);
+		}catch(HibernateException e){
+			throw new ExceptionController("Error consultando clientes",e);
+		}
 	}
 }

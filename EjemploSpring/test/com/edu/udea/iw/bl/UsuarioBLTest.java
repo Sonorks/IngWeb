@@ -17,7 +17,7 @@ public class UsuarioBLTest {
 	@Test
 	public void test() {
 		try {
-			assertTrue(usuario.doLogin("sonorks", "password"));
+			usuario.doLogin("sonorks", "password");
 			
 		}catch(Exception e) {
 			e.printStackTrace();

@@ -18,7 +18,7 @@ public class UsuarioBL {
 		this.usuarioDao = usuarioDao;
 	}
 	
-	public boolean doLogin(String user, String password) throws ExceptionController {
+	public void doLogin(String user, String password) throws ExceptionController {
 		if(user.isEmpty() || user != null) { //validando que se reciba un usuario
 			throw new ExceptionController("El usuario no puede estar vacía");
 		}
@@ -26,12 +26,13 @@ public class UsuarioBL {
 			throw new ExceptionController("La contraseña no puede estar vacía");
 		}
 		Usuario usuario = usuarioDao.obtener(user); //se obtiene el usuario por medio del obtener(login)
-		if(usuario.getContrasena().equals(password)) {
-			return true;
+		if(usuario == null) {
+			throw new ExceptionController("Usuario o contraseña incorrecta");
 		}
-		else {
-			return false;
+		if(!usuario.getContrasena().equals(password)) {
+			throw new ExceptionController("Credenciales incorrectas");
 		}
+		
 		
 	}
 }

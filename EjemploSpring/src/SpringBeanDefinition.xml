@@ -62,4 +62,5 @@
 	<bean id="UsuarioBL" class="com.edu.udea.iw.bl.UsuarioBL">
 		<property name="usuarioDao" ref="UsuarioDaoSpring"></property>
 	</bean>
+	<context:component-scan base-package="Paquete servicios web"></context:component-scan>
 </beans>
